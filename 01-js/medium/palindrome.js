@@ -7,7 +7,14 @@
 */
 
 function isPalindrome(str) {
-  return true;
+  inpVal = str.toString;
+  let revVal = str.toString().split("").reverse().join("");
+
+  if(str === revVal ){
+    return true;
+  }
+  else
+  return false;
 }
 
 module.exports = isPalindrome;

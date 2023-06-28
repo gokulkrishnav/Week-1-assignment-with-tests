@@ -8,5 +8,21 @@ Hint - use Date class exposed in JS
 */
 
 function calculateTime(n) {
-    return 0.01;
+    var startTime = new Date().getTime(); // Get the current time in milliseconds
+
+
+
+    // Performing the calculation 
+    
+    var sum = 0;
+    
+    for(var i = 1; i <= n; i++){
+        sum += 1;
+    }
+    
+    var endTime = new Date().getTime(); // gets current time in miliseconds
+    
+    var elapsedTime = endTime - startTime;  // Calculate the elapsed time in milliseconds
+    
+    return elapsedTime / 1000; // convert milliseconds to seconds
 }
